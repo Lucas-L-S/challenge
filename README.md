@@ -8,5 +8,5 @@ Com o auxílio do material de apoio disponibilizado desenvolver o chatbot seguin
 
 É uma API gateway simples que se conecta a API pública do GitHub e retorna os repositórios mais antigos na liguagem C# para que o Bot os use.
 
-A api está hospedada no Heroku no [link da API](https://take-chalenge.herokuapp.com/). 
+A api está hospedada no Heroku no link: [link da API](https://take-chalenge.herokuapp.com/). 
 
