@@ -1,0 +1,29 @@
+<body>
+  <main></main>
+</body>
+
+<script>
+
+  async function getContent() {
+    var PORT = process.env.PORT||5000
+    try {
+      const response = await fetch('http://localhost:'+{PORT}+'/')
+      const data = await response.json();
+      console.log(data)
+      show(data);
+    }catch (error){
+      console.log(error);
+    }
+  }
+
+  getContent();
+
+  function show(dados){
+    let output = '';
+    for (let dado of dados){
+      output += `<li>${dado.description}</li>`
+      document.querySelector('main').innerHTML = (output);
+    }
+  }
+
+</script>
